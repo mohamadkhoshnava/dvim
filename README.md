@@ -75,5 +75,17 @@ If you want to modify the source code or build your own image:
    ./publish.sh
    ```
 
+### Alternative: Using Docker Compose
+   
+If you prefer `docker-compose`, you can build and run directly without the manager script.
+
+**Run/Build:**
+```bash
+docker-compose up --build
+```
+
+**Mounting Paths:**
+Edit `docker-compose.yml` to change the `./:/home/developer/workspace` mapping to pointing to your desired project.
+
 ---
 *Plugins and state are persisted to `~/.dvim-data` on your host machine.*
