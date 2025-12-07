@@ -7,7 +7,7 @@ A powerful, containerized Neovim environment designed to replicate VSCode featur
 To install **dvim** on your system (Linux/macOS), simply run this one-liner in your terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mohamadkhoshnava/dvim/main/dvim.sh -o dvim.sh && chmod +x dvim.sh && sudo ./dvim.sh install && rm dvim.sh
+sudo bash -c "curl -fsSL https://raw.githubusercontent.com/mohamadkhoshnava/dvim/main/dvim.sh -o dvim.sh && chmod +x dvim.sh && sudo ./dvim.sh install && rm dvim.sh"
 ```
 *(Assuming the repo is named `dvim`. If locally, just run `sudo ./dvim.sh install`)*
 
@@ -23,7 +23,7 @@ dvim
 | Command | Description |
 |---|---|
 | `dvim` | Open current directory in Neovim |
-| `dvim run /path/to/app` | Open a specific folder |
+| `dvim /path/to/app` | Open a specific folder |
 
 ### Managing the Tool
 | Command | Description |
