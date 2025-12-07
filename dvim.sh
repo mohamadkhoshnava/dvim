@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # =============================================================================
-# VIM-IDE Manager (dvim)
+# dvim Manager (dvim)
 # A complete manager for the Dockerized Neovim Environment.
 # =============================================================================
 
 # Configuration
 DOCKER_HUB_USER="seyeddev"
-IMAGE_NAME="vim-ide"
+IMAGE_NAME="dvim"
 FULL_IMAGE_NAME="$DOCKER_HUB_USER/$IMAGE_NAME:latest"
-CONTAINER_NAME="vim-ide-session"
+CONTAINER_NAME="dvim-session"
 
 # Colors
 GREEN='\033[0;32m'
@@ -47,7 +47,7 @@ do_run() {
     # Determine Image Source
     local IMAGE_TO_RUN=""
     
-    # 1. Check for Local Build ('vim-ide')
+    # 1. Check for Local Build ('dvim')
     if [[ "$(docker images -q $IMAGE_NAME 2> /dev/null)" != "" ]]; then
          IMAGE_TO_RUN=$IMAGE_NAME
     else

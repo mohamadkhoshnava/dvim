@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-IMAGE_NAME="vim-ide"
+IMAGE_NAME="dvim"
 DOCKER_HUB_USER="seyeddev"
 TAG="latest"
 
