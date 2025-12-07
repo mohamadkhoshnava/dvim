@@ -21,7 +21,7 @@ dvim
 
 ### Opening Projects
 | Command | Description |
-|Args|---|
+|---|---|
 | `dvim` | Open current directory in Neovim |
 | `dvim run /path/to/app` | Open a specific folder |
 
