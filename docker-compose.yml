@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  vim:
+    build: .
+    volumes:
+      - .:/home/developer/workspace
+      # Mount the local config directory to the container's config location
+      - ./config/nvim:/home/developer/.config/nvim
+    tty: true
+    stdin_open: true
+    network_mode: host
+    environment:
+      - TERM=xterm-256color
